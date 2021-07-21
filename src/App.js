@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Background from './Background'
+import Background from './Background';
 
 function App() {
     const [seconds, setSeconds] = useState(1500);
@@ -41,8 +41,8 @@ function App() {
                 <p className="time-text">{time(seconds)}</p>
             </div>
             <div className="buttonsWrapper">
-                <button onClick={startTimer}>start timer</button>
-                <button onClick={stopTimer}>stop timer</button>
+                {isRunning || <button onClick={startTimer}>start timer</button>}
+                {isRunning && <button onClick={stopTimer}>stop timer</button>}
                 <button onClick={resetTimer}>reset timer</button>
             </div>
             <Background />
