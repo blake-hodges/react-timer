@@ -38,6 +38,14 @@ $light-orange: #B4784F;
 
 }
 
+.work-time {
+
+}
+
+.break-time {
+    background-color: $light-blue;
+}
+
 .timerAnimated {
     box-shadow:10px 0px #B4784F;
     animation-name: spinningBoxShadow;
@@ -50,7 +58,6 @@ $light-orange: #B4784F;
 
 .buttonsWrapper {
     padding: 20px;
-    /* background-color: blue; */
 }
 
 .time-text {
@@ -60,16 +67,6 @@ $light-orange: #B4784F;
     display: flex;
 }
 
-.work-time-wrapper {
-    display: flex;
-}
-.break-time-wrapper {
-    display: flex;
-}
-
-.time-icons {
-    font-size: 70px;
-}
 
 .rain-video {
     min-width: 100%;
