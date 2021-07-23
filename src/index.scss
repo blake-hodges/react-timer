@@ -38,10 +38,6 @@ $light-orange: #B4784F;
 
 }
 
-.work-time {
-
-}
-
 .break-time {
     background-color: $light-blue;
 }
@@ -54,7 +50,12 @@ $light-orange: #B4784F;
     animation-timing-function: linear;
 }
 
-
+.timer-message {
+    font-size: 20px;
+    padding: 10px 0px;
+    color: white;
+    font-family: Montserrat, sans-serif;
+}
 
 .buttonsWrapper {
     padding: 20px;
@@ -87,11 +88,20 @@ button {
     font-size: 14px;
     text-transform: uppercase;
     font-family: Montserrat, sans-serif;
-    border: 1px solid grey;
+    border: 1px solid white;
 }
 
 button:hover {
     cursor: pointer;
     background-color: #b95e1ffa;
     // change initial bg color to have opacity the same as
+}
+
+.buttons-break {
+    background-color: rgba(51, 157, 186, 0.7);
+    border: 1px solid white;
+}
+
+.buttons-break:hover {
+    background-color: $light-blue;
 }
