@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './css/App.css';
 import Background from './Background';
 import Timer from './Timer';
 import Chirp from './chirp.ogg';
@@ -83,12 +84,12 @@ function App() {
         return (
             <div className="flex-container">
                 <Timer message={message} seconds={seconds} time={time} />
-                <div className="buttonsWrapper">
+                <div className="buttons-wrapper">
                     {isRunning || <button onClick={startTimer} className="buttons">start timer</button>}
                     {isRunning && <button onClick={stopTimer} className="buttons">stop timer</button>}
                     <button onClick={resetTimer} className="buttons">reset timer</button>
-                    <button onClick={takeBreak} className="buttons">Take a Break</button>
-                    <button onClick={goWork} className="buttons">Get Back to Work</button>
+                    {isWorkTime && <button onClick={takeBreak} className="buttons">Take a Break</button>}
+                    {isWorkTime || <button onClick={goWork} className="buttons">Get Back to Work</button>}
 
                 </div>
                 <Background />

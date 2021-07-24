@@ -1,0 +1,41 @@
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 40px;
+}
+
+.buttons-wrapper {
+    padding: 100px;
+    display: flex;
+}
+
+button {
+    padding: 15px;
+    margin: 0 10px;
+
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #B4784F;
+    color: white;
+    
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: Montserrat, sans-serif;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #b95e1ffa;
+
+}
+
+.buttons-break {
+    background-color: rgba(51, 157, 186, 0.7);
+    border: 1px solid white;
+}
+
+.buttons-break:hover {
+    background-color: #339DBA;
+}

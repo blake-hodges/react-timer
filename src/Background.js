@@ -1,5 +1,6 @@
 import React from 'react';
 import rainyDay from './rainy-day.mp4';
+import './css/Background.css';
 
 function Background() {
     return (

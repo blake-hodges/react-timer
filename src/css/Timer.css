@@ -1,0 +1,72 @@
+@keyframes spinningBoxShadow {
+    0% {box-shadow: 0px 0px #339DBA;}
+    25% {box-shadow: 7px 0px #339DBA}
+    50% {box-shadow: 0px 7px #339DBA}
+    75% {box-shadow: -7px 0px #339DBA}
+    100% {box-shadow: 0px 0px #339DBA}
+}
+@media screen and (min-width:960px) {
+    .timer-wrapper {
+        width: 40vw;
+        height: 40vw;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .timer-wrapper {
+        width: 50vw;
+        height: 50vw;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .timer-wrapper {
+        width: 60vw;
+        height: 60vw;
+    }
+}
+
+
+.timer-wrapper {
+
+    max-width: 400px;
+    max-height:400px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 100%;
+    background-color: #B4784F;
+    opacity: 0.7;
+    border: 3px solid #fafafa;
+
+}
+
+.time-text {
+    display: flex;
+
+    font-size: 70px;
+    font-family: 'Share Tech Mono', serif;
+    color: white;
+}
+
+.timerAnimated {
+    box-shadow:10px 0px #B4784F;
+    animation-name: spinningBoxShadow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.timer-message {
+    padding: 10px 0px;
+    color: white;
+    font-size: 20px;
+    font-family: Montserrat, sans-serif;
+}
+
+.break-time {
+    background-color: #339DBA;
+}

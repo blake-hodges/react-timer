@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './css/Timer.css';
 
 function Timer(props) {
         return (
