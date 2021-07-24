@@ -5,6 +5,26 @@
     75% {box-shadow: -7px 0px #339DBA}
     100% {box-shadow: 0px 0px #339DBA}
 }
+
+
+
+.timer-wrapper {
+
+    max-width: 400px;
+    max-height:400px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 100%;
+    background-color: #B4784F;
+    opacity: 0.7;
+    border: 3px solid #fafafa;
+
+}
+
 @media screen and (min-width:960px) {
     .timer-wrapper {
         width: 40vw;
@@ -27,29 +47,18 @@
 }
 
 
-.timer-wrapper {
-
-    max-width: 400px;
-    max-height:400px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 100%;
-    background-color: #B4784F;
-    opacity: 0.7;
-    border: 3px solid #fafafa;
-
-}
-
 .time-text {
     display: flex;
 
     font-size: 70px;
     font-family: 'Share Tech Mono', serif;
     color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .time-text {
+        font-size: 40px;
+    }
 }
 
 .timerAnimated {
